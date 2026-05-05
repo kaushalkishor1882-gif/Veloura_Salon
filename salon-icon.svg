@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="goldGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0d080"/>
+      <stop offset="60%" stop-color="#c9a96e"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </radialGradient>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1208"/>
+      <stop offset="100%" stop-color="#0a0805"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="200" r="195" fill="none" stroke="#c9a96e" stroke-width="0.8" stroke-opacity="0.5"/>
+  
+  <!-- Decorative ring -->
+  <circle cx="200" cy="200" r="160" fill="none" stroke="#c9a96e" stroke-width="0.4" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+
+  <!-- Scissors icon -->
+  <g filter="url(#glow)" transform="translate(200,200)">
+    <!-- Blade 1 -->
+    <path d="M-10,-80 Q10,-40 30,40" stroke="url(#goldGrad)" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Blade 2 -->
+    <path d="M10,-80 Q-10,-40 -30,40" stroke="url(#goldGrad)" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Pivot -->
+    <circle cx="0" cy="0" r="8" fill="url(#goldGrad)"/>
+    <circle cx="0" cy="0" r="4" fill="#0a0a0a"/>
+    <!-- Handle rings 1 -->
+    <circle cx="35" cy="60" r="22" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+    <circle cx="35" cy="60" r="14" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.5"/>
+    <!-- Handle rings 2 -->
+    <circle cx="-35" cy="60" r="22" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+    <circle cx="-35" cy="60" r="14" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.5"/>
+    <!-- Tip lines -->
+    <line x1="30" y1="-90" x2="30" y2="-70" stroke="#c9a96e" stroke-width="2" stroke-opacity="0.6"/>
+    <line x1="-30" y1="-90" x2="-30" y2="-70" stroke="#c9a96e" stroke-width="2" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- Corner ornaments -->
+  <g stroke="#c9a96e" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M40,200 Q200,40 360,200"/>
+    <path d="M40,200 Q200,360 360,200"/>
+  </g>
+  
+  <!-- Star accents -->
+  <g fill="#c9a96e" opacity="0.7">
+    <polygon points="200,25 203,35 213,35 205,41 208,51 200,45 192,51 195,41 187,35 197,35" transform="scale(0.5) translate(200,-10)"/>
+  </g>
+  <circle cx="60" cy="100" r="3" fill="#c9a96e" opacity="0.5"/>
+  <circle cx="340" cy="100" r="3" fill="#c9a96e" opacity="0.5"/>
+  <circle cx="60" cy="300" r="3" fill="#c9a96e" opacity="0.5"/>
+  <circle cx="340" cy="300" r="3" fill="#c9a96e" opacity="0.5"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <radialGradient id="rg1" cx="30%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#c9a96e" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rg2" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#e8c99a" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="900" fill="#080808"/>
+  <!-- Ambient glows -->
+  <ellipse cx="300" cy="350" rx="500" ry="400" fill="url(#rg1)" filter="url(#blur1)"/>
+  <ellipse cx="1100" cy="600" rx="450" ry="350" fill="url(#rg2)" filter="url(#blur1)"/>
+  <!-- Thin gold lines -->
+  <line x1="0" y1="200" x2="400" y2="500" stroke="#c9a96e" stroke-width="0.5" stroke-opacity="0.3"/>
+  <line x1="100" y1="0" x2="600" y2="700" stroke="#c9a96e" stroke-width="0.3" stroke-opacity="0.2"/>
+  <line x1="1440" y1="100" x2="900" y2="600" stroke="#c9a96e" stroke-width="0.5" stroke-opacity="0.3"/>
+  <line x1="1440" y1="400" x2="800" y2="900" stroke="#c9a96e" stroke-width="0.3" stroke-opacity="0.2"/>
+  <!-- Subtle grid -->
+  <g stroke="#ffffff" stroke-width="0.2" stroke-opacity="0.04">
+    <line x1="0" y1="150" x2="1440" y2="150"/>
+    <line x1="0" y1="300" x2="1440" y2="300"/>
+    <line x1="0" y1="450" x2="1440" y2="450"/>
+    <line x1="0" y1="600" x2="1440" y2="600"/>
+    <line x1="0" y1="750" x2="1440" y2="750"/>
+    <line x1="200" y1="0" x2="200" y2="900"/>
+    <line x1="400" y1="0" x2="400" y2="900"/>
+    <line x1="600" y1="0" x2="600" y2="900"/>
+    <line x1="800" y1="0" x2="800" y2="900"/>
+    <line x1="1000" y1="0" x2="1000" y2="900"/>
+    <line x1="1200" y1="0" x2="1200" y2="900"/>
+    <line x1="1400" y1="0" x2="1400" y2="900"/>
+  </g>
+  <!-- Gold particles -->
+  <circle cx="150" cy="180" r="2" fill="#c9a96e" opacity="0.6"/>
+  <circle cx="320" cy="80" r="1.5" fill="#c9a96e" opacity="0.4"/>
+  <circle cx="780" cy="120" r="2" fill="#c9a96e" opacity="0.5"/>
+  <circle cx="1050" cy="200" r="1.5" fill="#c9a96e" opacity="0.7"/>
+  <circle cx="1350" cy="140" r="2" fill="#c9a96e" opacity="0.4"/>
+  <circle cx="450" cy="750" r="2" fill="#c9a96e" opacity="0.5"/>
+  <circle cx="900" cy="800" r="1.5" fill="#c9a96e" opacity="0.6"/>
+  <circle cx="1200" cy="700" r="2" fill="#c9a96e" opacity="0.4"/>
+</svg>

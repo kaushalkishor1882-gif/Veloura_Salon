@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veloura Salon — Luxury Beauty Studio, Ranchi</title>
+  <meta name="description" content="Veloura Salon — Premium beauty and grooming services in Ranchi, Jharkhand. Haircut, bridal makeup, facial, spa, coloring and more."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ═══════ CURSOR ═══════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ═══════ LOADER ═══════ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <img src="images/salon-icon.svg" alt="Veloura"/>
+        <span>VELOURA</span>
+      </div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-logo">
+      <img src="images/salon-icon.svg" alt="Veloura Logo" class="nav-logo-img"/>
+      <div class="nav-logo-text">
+        <span class="brand-name">VELOURA</span>
+        <span class="brand-sub">SALON</span>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Book Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mob-link">Home</a>
+    <a href="#services" class="mob-link">Services</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#pricing" class="mob-link">Pricing</a>
+    <a href="#gallery" class="mob-link">Gallery</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="home">
+    <img src="images/hero-bg.svg" alt="" class="hero-bg-img" aria-hidden="true"/>
+    <div class="hero-particles" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Ranchi's Premier Beauty Studio</p>
+      <h1 class="hero-title reveal">
+        <span class="line">Beauty is</span>
+        <span class="line italic">not a luxury —</span>
+        <span class="line">it's a ritual.</span>
+      </h1>
+      <p class="hero-sub reveal">Premium grooming & beauty experiences crafted for those who appreciate excellence.</p>
+      <div class="hero-btns reveal">
+        <a href="#contact" class="btn-primary">Book an Appointment</a>
+        <a href="#services" class="btn-ghost">Explore Services</a>
+      </div>
+    </div>
+
+    <div class="hero-right reveal">
+      <div class="hero-card glass">
+        <img src="images/salon-icon.svg" alt="Veloura Art" class="hero-card-img"/>
+        <div class="hero-card-badge">
+          <span class="badge-num">500+</span>
+          <span class="badge-lbl">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-stats reveal">
+      <div class="stat"><span class="stat-n">5+</span><span class="stat-l">Years</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-n">20+</span><span class="stat-l">Services</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-n">500+</span><span class="stat-l">Clients</span></div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════ MARQUEE ═══════ -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Haircut & Styling</span><span class="sep">✦</span>
+      <span>Bridal Makeup</span><span class="sep">✦</span>
+      <span>Facial & Skincare</span><span class="sep">✦</span>
+      <span>Hair Coloring</span><span class="sep">✦</span>
+      <span>Spa & Relaxation</span><span class="sep">✦</span>
+      <span>Beard Grooming</span><span class="sep">✦</span>
+      <span>Nail Art</span><span class="sep">✦</span>
+      <span>Threading</span><span class="sep">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Haircut & Styling</span><span class="sep">✦</span>
+      <span>Bridal Makeup</span><span class="sep">✦</span>
+      <span>Facial & Skincare</span><span class="sep">✦</span>
+      <span>Hair Coloring</span><span class="sep">✦</span>
+      <span>Spa & Relaxation</span><span class="sep">✦</span>
+      <span>Beard Grooming</span><span class="sep">✦</span>
+      <span>Nail Art</span><span class="sep">✦</span>
+      <span>Threading</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════ SERVICES ═══════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">What We Offer</p>
+        <h2 class="section-title">Our <em>Signature</em><br/>Services</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal" data-delay="0">
+          <div class="sc-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 50 Q20 20 30 15 Q40 20 40 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="22" y1="50" x2="22" y2="58" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="27" y1="50" x2="27" y2="60" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="30" y1="50" x2="30" y2="61" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="33" y1="50" x2="33" y2="60" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="38" y1="50" x2="38" y2="58" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="42" cy="12" r="3" fill="currentColor" opacity="0.7"/>
+            </svg>
+          </div>
+          <h3>Haircut &amp; Styling</h3>
+          <p>Expert cuts and modern styling techniques tailored to your face shape and lifestyle.</p>
+          <div class="sc-num">01</div>
+        </div>
+
+        <div class="service-card reveal" data-delay="100">
+          <div class="sc-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="22" r="12" stroke="currentColor" stroke-width="2"/>
+              <path d="M18 34 Q30 48 42 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="30" y1="10" x2="30" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="30" cy="3" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Facial &amp; Skincare</h3>
+          <p>Revitalizing facials using premium products to restore radiance and youth.</p>
+          <div class="sc-num">02</div>
+        </div>
+
+        <div class="service-card reveal" data-delay="200">
+          <div class="sc-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 50 Q20 10 30 12 Q40 10 50 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 35 Q30 25 45 35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.6"/>
+              <circle cx="30" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Hair Coloring</h3>
+          <p>Global color, highlights, balayage and creative coloring with zero-damage formulas.</p>
+          <div class="sc-num">03</div>
+        </div>
+
+        <div class="service-card reveal" data-delay="0">
+          <div class="sc-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="30" cy="30" rx="18" ry="22" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 25 Q30 18 40 25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 35 Q30 28 40 35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="30" cy="10" r="3" fill="currentColor" opacity="0.6"/>
+              <line x1="20" y1="10" x2="15" y2="5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="40" y1="10" x2="45" y2="5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Bridal Makeup</h3>
+          <p>Flawless bridal looks that last all day — traditional, fusion or contemporary styles.</p>
+          <div class="sc-num">04</div>
+        </div>
+
+        <div class="service-card reveal" data-delay="100">
+          <div class="sc-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 45 Q15 20 30 15 Q45 20 45 45" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 35 Q30 28 40 35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+              <path d="M18 28 Q30 22 42 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+              <circle cx="30" cy="10" r="4" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Spa &amp; Relaxation</h3>
+          <p>Full body treatments, aromatherapy and massage to rejuvenate your mind and body.</p>
+          <div class="sc-num">05</div>
+        </div>
+
+        <div class="service-card reveal" data-delay="200">
+          <div class="sc-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="10" width="12" height="40" rx="6" stroke="currentColor" stroke-width="2"/>
+              <rect x="33" y="10" width="12" height="40" rx="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M27 30 L33 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="21" cy="8" r="3" fill="currentColor" opacity="0.6"/>
+              <circle cx="39" cy="8" r="3" fill="currentColor" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>Beard Grooming</h3>
+          <p>Precision shaping, hot towel shaves and beard treatments for the modern gentleman.</p>
+          <div class="sc-num">06</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ ABOUT ═══════ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-img-wrap reveal">
+        <img src="images/about-art.svg" alt="Veloura Art" class="about-img"/>
+        <div class="about-badge glass">
+          <span class="ab-year">Est.</span>
+          <span class="ab-num">2020</span>
+          <span class="ab-city">Ranchi</span>
+        </div>
+        <div class="about-tag glass">
+          <span>⭐ 4.9 / 5 Rating</span>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <p class="section-tag">Our Story</p>
+        <h2 class="section-title">Where <em>Artistry</em><br/>Meets Elegance</h2>
+        <div class="gold-line"></div>
+        <p class="about-desc">
+          Founded in Ranchi with a singular vision — to bring world-class beauty experiences to every client. Veloura Salon is more than a place; it's a sanctuary where confidence is crafted.
+        </p>
+        <p class="about-desc">
+          Our team of certified professionals stay ahead of global trends through continuous training. We use only premium, skin-safe products to ensure you look and feel extraordinary.
+        </p>
+
+        <div class="about-features">
+          <div class="af-item">
+            <div class="af-icon">✦</div>
+            <div>
+              <strong>Certified Professionals</strong>
+              <p>Trained stylists &amp; beauty experts</p>
+            </div>
+          </div>
+          <div class="af-item">
+            <div class="af-icon">✦</div>
+            <div>
+              <strong>Premium Products Only</strong>
+              <p>Top international brands &amp; formulas</p>
+            </div>
+          </div>
+          <div class="af-item">
+            <div class="af-icon">✦</div>
+            <div>
+              <strong>Hygiene First</strong>
+              <p>Hospital-grade sanitation standards</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn-primary">Meet Our Team →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PRICING ═══════ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">Transparent Pricing</p>
+        <h2 class="section-title">Simple, <em>Honest</em><br/>Pricing</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="price-card reveal" data-delay="0">
+          <div class="pc-header">
+            <h3>Essential</h3>
+            <p>For everyday grooming</p>
+          </div>
+          <ul class="pc-list">
+            <li><span>Haircut (Men)</span><span>₹299</span></li>
+            <li><span>Haircut (Women)</span><span>₹499</span></li>
+            <li><span>Beard Shaping</span><span>₹149</span></li>
+            <li><span>Eyebrow Threading</span><span>₹99</span></li>
+            <li><span>Upper Lip</span><span>₹49</span></li>
+          </ul>
+          <a href="#contact" class="btn-ghost full-w">Book Now</a>
+        </div>
+
+        <div class="price-card featured reveal" data-delay="100">
+          <div class="pc-badge">Most Popular</div>
+          <div class="pc-header">
+            <h3>Premium</h3>
+            <p>For the full experience</p>
+          </div>
+          <ul class="pc-list">
+            <li><span>Classic Facial</span><span>₹799</span></li>
+            <li><span>Hair Coloring (Global)</span><span>₹1,499</span></li>
+            <li><span>Balayage / Highlights</span><span>₹2,499</span></li>
+            <li><span>Full Body Spa</span><span>₹1,999</span></li>
+            <li><span>Keratin Treatment</span><span>₹2,999</span></li>
+          </ul>
+          <a href="#contact" class="btn-primary full-w">Book Now</a>
+        </div>
+
+        <div class="price-card reveal" data-delay="200">
+          <div class="pc-header">
+            <h3>Bridal</h3>
+            <p>Your most special day</p>
+          </div>
+          <ul class="pc-list">
+            <li><span>Bridal Makeup</span><span>₹4,999</span></li>
+            <li><span>Engagement Look</span><span>₹2,999</span></li>
+            <li><span>Pre-Bridal Package</span><span>₹8,999</span></li>
+            <li><span>Mehendi Design</span><span>₹999</span></li>
+            <li><span>Full Bridal Package</span><span>₹14,999</span></li>
+          </ul>
+          <a href="#contact" class="btn-ghost full-w">Book Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ GALLERY ═══════ -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">Our Work</p>
+        <h2 class="section-title">The Veloura<br/><em>Portfolio</em></h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <div class="g-item g-tall">
+          <div class="g-placeholder">
+            <div class="g-inner">
+              <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="g-art">
+                <rect width="200" height="300" fill="#1a1208"/>
+                <path d="M100 60 Q130 100 100 160 Q70 100 100 60Z" stroke="#c9a96e" stroke-width="1.5" fill="none" stroke-opacity="0.7"/>
+                <circle cx="100" cy="40" r="20" stroke="#c9a96e" stroke-width="1.5" fill="none"/>
+                <path d="M60 80 Q100 260 140 80" stroke="#c9a96e" stroke-width="1" fill="none" stroke-opacity="0.4"/>
+                <text x="100" y="280" text-anchor="middle" fill="#c9a96e" font-size="11" font-family="Jost" letter-spacing="4" opacity="0.6">HAIRCUT</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="g-item">
+          <div class="g-placeholder">
+            <div class="g-inner">
+              <svg viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="g-art">
+                <rect width="200" height="180" fill="#120d05"/>
+                <ellipse cx="100" cy="80" rx="60" ry="55" stroke="#c9a96e" stroke-width="1.5" fill="none" stroke-opacity="0.7"/>
+                <path d="M60 60 Q100 30 140 60" stroke="#c9a96e" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M70 85 Q100 70 130 85" stroke="#c9a96e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M75 105 Q100 95 125 105" stroke="#c9a96e" stroke-width="1" fill="none" stroke-linecap="round"/>
+                <text x="100" y="165" text-anchor="middle" fill="#c9a96e" font-size="11" font-family="Jost" letter-spacing="4" opacity="0.6">MAKEUP</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="g-item">
+          <div class="g-placeholder">
+            <div class="g-inner">
+              <svg viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="g-art">
+                <rect width="200" height="180" fill="#0d0d0d"/>
+                <path d="M40 140 Q60 40 100 30 Q140 40 160 140" stroke="#c9a96e" stroke-width="2" fill="none"/>
+                <path d="M55 110 Q100 85 145 110" stroke="#c9a96e" stroke-width="1.5" fill="none" stroke-opacity="0.6"/>
+                <circle cx="100" cy="22" r="10" stroke="#c9a96e" stroke-width="1.5" fill="none"/>
+                <text x="100" y="165" text-anchor="middle" fill="#c9a96e" font-size="11" font-family="Jost" letter-spacing="4" opacity="0.6">COLORING</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="g-item g-wide">
+          <div class="g-placeholder">
+            <div class="g-inner">
+              <svg viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="g-art">
+                <rect width="400" height="180" fill="#100c06"/>
+                <!-- Wavy spa lines -->
+                <path d="M20 90 Q70 60 120 90 Q170 120 220 90 Q270 60 320 90 Q370 120 400 90" stroke="#c9a96e" stroke-width="2" fill="none" stroke-opacity="0.7"/>
+                <path d="M20 110 Q70 80 120 110 Q170 140 220 110 Q270 80 320 110 Q370 140 400 110" stroke="#c9a96e" stroke-width="1.5" fill="none" stroke-opacity="0.4"/>
+                <path d="M20 70 Q70 40 120 70 Q170 100 220 70 Q270 40 320 70 Q370 100 400 70" stroke="#c9a96e" stroke-width="1" fill="none" stroke-opacity="0.3"/>
+                <text x="200" y="165" text-anchor="middle" fill="#c9a96e" font-size="11" font-family="Jost" letter-spacing="4" opacity="0.6">SPA &amp; RELAXATION</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="gallery-note reveal">📷 Replace gallery placeholders with your actual salon photos</p>
+    </div>
+  </section>
+
+  <!-- ═══════ TESTIMONIALS ═══════ -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">Client Love</p>
+        <h2 class="section-title">What Our Clients<br/><em>Say</em></h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal glass">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Absolutely loved the bridal package! The team at Veloura made me feel like royalty on my wedding day. Highly recommend to every bride in Ranchi."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">P</div>
+            <div>
+              <strong>Priya Sharma</strong>
+              <span>Bridal Client</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal glass">
+          <div class="testi-stars">★★★★★</div>
+          <p>"The hair coloring turned out exactly as I imagined — maybe even better. The products they use are top-quality and my hair feels so healthy!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div>
+              <strong>Anjali Mehta</strong>
+              <span>Regular Client</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal glass">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Best beard grooming experience in Ranchi. The ambience is luxurious and the staff is very professional. Will definitely be coming back!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">R</div>
+            <div>
+              <strong>Rahul Verma</strong>
+              <span>Men's Grooming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACT ═══════ -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-left reveal">
+        <p class="section-tag">Get in Touch</p>
+        <h2 class="section-title">Book Your<br/><em>Experience</em></h2>
+        <div class="gold-line"></div>
+
+        <div class="contact-info">
+          <div class="ci-item">
+            <span class="ci-icon">📍</span>
+            <div>
+              <strong>Location</strong>
+              <p>Ranchi, Jharkhand — India</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+919999999999">+91 99999 99999</a></p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon">🕒</span>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon–Sun: 10:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon">📸</span>
+            <div>
+              <strong>Follow Us</strong>
+              <p>@velouraSalon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" id="bookingForm">
+          <h3>Book an Appointment</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Your name" required/>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+91 XXXXX XXXXX" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Select Service</label>
+            <select required>
+              <option value="">Choose a service...</option>
+              <option>Haircut &amp; Styling</option>
+              <option>Facial &amp; Skincare</option>
+              <option>Hair Coloring</option>
+              <option>Bridal Makeup</option>
+              <option>Spa &amp; Relaxation</option>
+              <option>Beard Grooming</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date" required/>
+            </div>
+            <div class="form-group">
+              <label>Preferred Time</label>
+              <input type="time" min="10:00" max="20:00" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message (Optional)</label>
+            <textarea placeholder="Any special requests or notes..." rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-w">Confirm Booking ✦</button>
+        </form>
+        <div class="form-success" id="formSuccess" style="display:none">
+          <div class="fs-icon">✦</div>
+          <h3>Booking Received!</h3>
+          <p>We'll confirm your appointment via WhatsApp shortly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/salon-icon.svg" alt="Veloura" class="footer-logo"/>
+          <div>
+            <span class="brand-name">VELOURA</span>
+            <span class="brand-sub">SALON</span>
+          </div>
+          <p class="footer-tagline">Where beauty meets perfection.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="#services">Haircut &amp; Styling</a>
+          <a href="#services">Bridal Makeup</a>
+          <a href="#services">Facial &amp; Skincare</a>
+          <a href="#services">Spa &amp; Relaxation</a>
+          <a href="#services">Hair Coloring</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Connect</h4>
+          <a href="https://wa.me/919999999999" class="wa-btn">💬 WhatsApp Us</a>
+          <p>📍 Ranchi, Jharkhand</p>
+          <p>📞 +91 99999 99999</p>
+          <p>🕒 10 AM – 8 PM Daily</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="gold-line"></div>
+        <p>© 2026 Veloura Salon. All rights reserved. Built with ♥ in Ranchi, Jharkhand.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919999999999" class="wa-float" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
