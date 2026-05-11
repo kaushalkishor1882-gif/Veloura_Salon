@@ -1,8 +1,7 @@
 # ✦ Veloura Salon — Premium Beauty Studio Website
 
-> **Full Stack Web Development — Task 3 (2026)**  
+> **Full Stack Web Development (2026)**  
 > Build, Pitch & Monetize a Real Local Business Website  
-> Internship Project by [Future Interns](https://futureinterns.com)
 
 ---
 
@@ -18,7 +17,7 @@
 
 🔗 **https://velourasalon1882.netlify.app/**
 
-> *(Replace with your actual GitHub Pages URL after deployment)*
+
 
 ---
 
@@ -103,38 +102,6 @@ veloura-salon/
 
 ---
 
-## 🚀 How to Run Locally
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/YourUsername/veloura-salon.git
-
-# 2. Navigate into the folder
-cd veloura-salon
-
-# 3. Open in browser
-# Simply open index.html in any browser
-# OR use VS Code Live Server extension for best experience
-```
-
----
-
-## 🌍 Deploy on GitHub Pages
-
-```bash
-# 1. Push all files to GitHub (main branch)
-git add .
-git commit -m "Deploy Veloura Salon"
-git push origin main
-
-# 2. Go to: GitHub Repo → Settings → Pages
-# 3. Source: main branch, / (root) folder
-# 4. Save → wait 2-3 minutes
-# 5. Live at: https://YourUsername.github.io/veloura-salon
-```
-
----
-
 ## 📝 Customization Guide
 
 | What to change | Where |
@@ -150,39 +117,20 @@ git push origin main
 
 ---
 
-## 📌 Task 3 Checklist (Future Interns)
-
-- [x] Built for a **real local business** (Veloura Salon, Ranchi)
-- [x] **Professional design** — big brand quality
-- [x] **Mobile responsive** — works on all screen sizes
-- [x] **Easy to navigate** — clear UX structure
-- [x] **Google Maps embedded** *(add iframe in contact section)*
-- [x] **Contact form** with validation
-- [x] **About section** with business story
-- [x] **Services listed** with descriptions
-- [x] **Pricing displayed** transparently
-- [x] **Gallery section** ready for real photos
-- [x] **WhatsApp integration** for direct client contact
-- [x] **Deployed live** via GitHub Pages
-
----
 
 ## 🙋‍♂️ Author
 
-**[Your Name]**  
+**[Kaushal Kishor]**  
 Full Stack Web Development Intern — Future Interns (2026)
 
-- GitHub: [@YourUsername](https://github.com/YourUsername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your@email.com
+- GitHub: https://github.com/kaushalkishor1882-gif/Veloura_Salon
+  
+- LinkedIn: https://www.linkedin.com/posts/kaushal-k-52656a368_webdevelopment-fullstack-internship-ugcPost-7457615262586966017-8V6M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFs1KG4Bc1ZBLXgAd8M98shtrDzfOaEhr58
+  
+- Email: Kaushalkishor1882@gmail.com
 
 ---
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
 
 ## 🌟 Show Your Support
 
@@ -190,4 +138,4 @@ If you found this project helpful or impressive, please give it a **⭐ Star** o
 
 ---
 
-*Built with ♥ in Ranchi, Jharkhand — as part of Future Interns Task 3 (2026)*
+*Built with ♥ in Ranchi, Jharkhand (2026)*
