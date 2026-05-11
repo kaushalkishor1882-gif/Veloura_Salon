@@ -16,7 +16,7 @@
 
 ## 🌐 Live Demo
 
-🔗 **[https://YourUsername.github.io/veloura-salon](https://YourUsername.github.io/veloura-salon)**
+🔗 **https://velourasalon1882.netlify.app/**
 
 > *(Replace with your actual GitHub Pages URL after deployment)*
 
